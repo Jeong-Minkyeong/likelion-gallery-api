@@ -47,7 +47,7 @@ public class GalleryController {
         galleryService.deleteCommentById(imageId, id);
     }
 
-    @Operation(summary="모든 이미지 조회", description="모든 이미지를 불러옵니다.")
+    @Operation(summary="모든 이미지 불러오기", description="모든 이미지를 불러옵니다.")
     @GetMapping("/imageAll")
     public List<Image> imageAll(){
         return galleryService.imageAll();
